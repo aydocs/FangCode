@@ -1,0 +1,18 @@
+$schema: "http://json-schema.org/draft-07/schema#"
+title: FangCode Agent
+type: object
+required: [name, description, version, system_prompt, category]
+properties:
+  name: { type: string, minLength: 2, maxLength: 64 }
+  slug: { type: string, pattern: "^[a-z0-9][a-z0-9\\-]{0,62}$" }
+  version: { type: string, pattern: "^\\d+\\.\\d+\\.\\d+$" }
+  description: { type: string, minLength: 10, maxLength: 512 }
+  category: { type: string, enum: [web, frontend, backend, fullstack, mobile, desktop, devops, cloud, security, ai, data, database, language, linux, leadership] }
+  tags: { type: array, items: { type: string } }
+  author: { type: object, properties: { name: { type: string } }, required: [name] }
+  license: { type: string, default: MIT }
+  system_prompt: { type: string, minLength: 20 }
+  skills: { type: array, items: { type: string } }
+  tools: { type: array, items: { type: string, enum: [bash, read, write, edit, grep, glob, webfetch] } }
+  recommended_models: { type: array, items: { type: string } }
+  examples: { type: array, items: { type: object, properties: { input: { type: string }, output: { type: string } }, required: [input] } }

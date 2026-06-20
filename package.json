@@ -1,0 +1,37 @@
+{
+  "name": "fangcode",
+  "version": "1.0.0",
+  "description": "Agent-first, MCP-native multi-agent framework for MiMoCode",
+  "main": "src/index.js",
+  "bin": {
+    "fc": "./bin/fc.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node --test tests/",
+    "fc": "node bin/fc.js"
+  },
+  "keywords": [
+    "agent-framework",
+    "multi-agent",
+    "mcp",
+    "mimocode",
+    "ai-agents",
+    "orchestration"
+  ],
+  "author": "FangCode Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aydocs/FangCode"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "yaml": "^2.4.0",
+    "chalk": "^4.1.2",
+    "commander": "^12.0.0",
+    "semver": "^7.6.0"
+  }
+}

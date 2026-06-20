@@ -1,0 +1,6 @@
+node_modules/
+.fangcode/
+.marketplace-index.json
+*.backup.*
+*.removed.*
+.DS_Store

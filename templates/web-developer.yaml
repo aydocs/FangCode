@@ -1,0 +1,6 @@
+name: Template Web Developer
+category: web
+skills: [html, css, javascript]
+tools: [bash, read, write, edit, grep, glob, webfetch]
+recommended_models: [mimo-v2.5-pro]
+description: Template for web developer agents
